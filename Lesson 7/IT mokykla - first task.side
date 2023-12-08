@@ -1,0 +1,853 @@
+{
+  "id": "10ed08fb-a204-4971-8e77-6e4627b0ff13",
+  "version": "2.0",
+  "name": "IT mokykla - first task",
+  "url": "https://itmokykla.lt/testing/one.html",
+  "tests": [{
+    "id": "9b5270e6-1faa-4def-b9a5-78761049ae99",
+    "name": "Error when username is 4 symbols long",
+    "commands": [{
+      "id": "fa353b1c-1226-4dea-bdd9-c2cfa99a0c24",
+      "comment": "",
+      "command": "open",
+      "target": "/testing/one.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "97053180-5622-4482-ade7-6137d912288c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1405x809",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "585232a3-8210-449b-8ecd-a62a374775b4",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dd06ea77-82f7-4b04-b702-84fb10f1e70d",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Rasa"
+    }, {
+      "id": "d74c67dc-08b6-4952-b708-9807ffd56bae",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(3)",
+      "targets": [
+        ["css=input:nth-child(3)", "css:finder"],
+        ["xpath=(//input[@name='gender'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[3]/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "60716ee7-4ebd-4a9e-ae4e-2634a5f94a3e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b1c9915f-9535-4d33-b15a-775bfd96915f",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.alert-danger",
+      "targets": [
+        ["css=.alert", "css:finder"],
+        ["xpath=//div[@id='result']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0fb5b0b8-f443-40b1-b84c-fb6b64edc8ee",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.alert-danger",
+      "targets": [],
+      "value": "Username is too short"
+    }]
+  }, {
+    "id": "404a5cd3-48b4-4bb1-ac7d-4d1a37463e57",
+    "name": "Validation of 5 symbols lenght username",
+    "commands": [{
+      "id": "6abd23c1-41d5-488d-99ff-9747b37093db",
+      "comment": "",
+      "command": "open",
+      "target": "/testing/one.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "26fdc4b2-33b5-4168-89a1-1ab39d8fdf0d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1405x809",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ed0ec385-f0f2-4c93-9c9b-8539d8c7e683",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "af35c727-d2ca-4097-b410-c420fafb4242",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Migle"
+    }, {
+      "id": "0b4fbc42-380b-4f4e-b4b4-6ba76062e7df",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(3)",
+      "targets": [
+        ["css=input:nth-child(3)", "css:finder"],
+        ["xpath=(//input[@name='gender'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[3]/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "068e5400-bc44-4b4d-8a21-de4ccaafddae",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "94281694-f176-4e1c-a0ef-52459c9031cd",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.alert-success",
+      "targets": [
+        ["css=.alert", "css:finder"],
+        ["xpath=//div[@id='result']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "11dae939-51b0-4b83-a049-40694b1c3b87",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.alert-success",
+      "targets": [],
+      "value": "Registration successfull"
+    }]
+  }, {
+    "id": "86658767-d6f0-4058-9758-7d8c75db7b18",
+    "name": "Validation of 20 symbols lenght username",
+    "commands": [{
+      "id": "31ab94ee-efe4-494a-8e84-e99b1e14987b",
+      "comment": "",
+      "command": "open",
+      "target": "/testing/one.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5f7afb45-bcfc-488a-99e9-d43528f998eb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1405x809",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "27d083a4-d100-4896-af26-30129d4eb1e2",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "81b51ed3-1963-45b6-a608-2491310fd8ea",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Vardenis Pavardeniss"
+    }, {
+      "id": "a77700dd-a8db-4a56-b91b-01062e6f512d",
+      "comment": "",
+      "command": "click",
+      "target": "name=gender",
+      "targets": [
+        ["name=gender", "name"],
+        ["css=.form-group:nth-child(3) > input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='gender']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "70a4a986-e6a3-4bee-8e83-104db97ce9c1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1de7bc53-988f-453f-9093-29be82092e6d",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.alert-success",
+      "targets": [
+        ["css=.alert", "css:finder"],
+        ["xpath=//div[@id='result']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c99fa8e6-02b0-459b-9b3a-ddf07b3fa298",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.alert-success",
+      "targets": [
+        ["css=.alert", "css:finder"],
+        ["xpath=//div[@id='result']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div", "xpath:position"]
+      ],
+      "value": "Registration successfull"
+    }]
+  }, {
+    "id": "c8381408-7091-4b10-b205-0e4750740639",
+    "name": "Error when username is 21 symbols long",
+    "commands": [{
+      "id": "d7ead9b0-3b1d-4986-8c55-24d34fcee1a3",
+      "comment": "",
+      "command": "open",
+      "target": "/testing/one.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9cd3c56f-c6a1-4572-86cc-4ef59fc2c490",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1405x809",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "15bb9e54-a42e-4c1c-8132-1a4d5ee9a45e",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d243c433-257b-43d2-b1c4-c81f118f2b3d",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Petrenis Petretenelis"
+    }, {
+      "id": "c308b1c4-3041-410d-99f6-e23ffdd2eb9e",
+      "comment": "",
+      "command": "click",
+      "target": "name=gender",
+      "targets": [
+        ["name=gender", "name"],
+        ["css=.form-group:nth-child(3) > input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='gender']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c33904b1-254b-4e40-9423-c6f8eae3f12b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5e5e007e-cc11-40b7-985d-7b95e0596cee",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.alert-danger",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c34d33c2-5b98-4ae3-b5cd-c579ab24a269",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.alert-danger",
+      "targets": [],
+      "value": "Username is invalid!"
+    }]
+  }, {
+    "id": "6c5ba5a8-ec37-4a28-bb47-8de76d9e635f",
+    "name": "255 symbols comment",
+    "commands": [{
+      "id": "4fc330d7-03cd-479b-9f33-cbe87565bd24",
+      "comment": "",
+      "command": "open",
+      "target": "/testing/one.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1c8580b6-2602-437c-a5db-136bed9f9ddc",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1405x809",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b5482596-4d53-45c3-87e9-104c8e42ba42",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2d3f7512-7173-4285-ab1c-2c0152cd27d4",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Petras"
+    }, {
+      "id": "25758f80-0927-4d59-b5b1-5b91c048b46e",
+      "comment": "",
+      "command": "click",
+      "target": "id=comment",
+      "targets": [
+        ["id=comment", "id"],
+        ["name=comments", "name"],
+        ["css=#comment", "css:finder"],
+        ["xpath=//textarea[@id='comment']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[2]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "28830195-a5bb-4607-9a78-41e5b287a838",
+      "comment": "",
+      "command": "type",
+      "target": "id=comment",
+      "targets": [
+        ["id=comment", "id"],
+        ["name=comments", "name"],
+        ["css=#comment", "css:finder"],
+        ["xpath=//textarea[@id='comment']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[2]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "I really like the idea of this organization. The vision really suits for my values. I strongly believe that this organization has bright future and I hope that I could bring more new ideas. I would be grateful for opportunity to join. Thank you very much."
+    }, {
+      "id": "6e429acd-3c7a-448a-a8a8-a36ebff5431e",
+      "comment": "",
+      "command": "click",
+      "target": "name=gender",
+      "targets": [
+        ["name=gender", "name"],
+        ["css=.form-group:nth-child(3) > input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='gender']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c30b1c1d-d388-43fd-807d-19eeb3364e22",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c8e5902-c3e7-4cdd-808f-f3ef598816f0",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.alert-success",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "abda431c-9b6c-4682-827e-68de0f5e6295",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.alert-success",
+      "targets": [],
+      "value": "Registration successfull"
+    }]
+  }, {
+    "id": "caed8314-fde8-4184-831d-0dbecbfab46b",
+    "name": "256 symbols comment",
+    "commands": [{
+      "id": "ed7d7a79-4753-4ebb-8477-df0c2dbfc06b",
+      "comment": "",
+      "command": "open",
+      "target": "/testing/one.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d46ad0c9-f22d-463d-8673-b7e128a6ae57",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1405x809",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1ba865db-4096-4549-8826-08517b74f0b6",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "477838e6-0518-4c8c-98f9-f8f3a183a1f9",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Petras"
+    }, {
+      "id": "017bfa9b-fb2e-4407-b67a-a70835e0819a",
+      "comment": "",
+      "command": "click",
+      "target": "id=comment",
+      "targets": [
+        ["id=comment", "id"],
+        ["name=comments", "name"],
+        ["css=#comment", "css:finder"],
+        ["xpath=//textarea[@id='comment']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[2]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "83d8e2f1-36d7-410d-9e42-d6a51723125d",
+      "comment": "",
+      "command": "type",
+      "target": "id=comment",
+      "targets": [
+        ["id=comment", "id"],
+        ["name=comments", "name"],
+        ["css=#comment", "css:finder"],
+        ["xpath=//textarea[@id='comment']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[2]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "I really like the idea of this organization. The vision really suits for my values. I strongly believe that this organization has bright future and I hope that I could bring more new ideas. I would be grateful for opportunity to join. Thank you very much!!"
+    }, {
+      "id": "df076bcd-3e48-43b9-b899-dc45bbe3d616",
+      "comment": "",
+      "command": "click",
+      "target": "name=gender",
+      "targets": [
+        ["name=gender", "name"],
+        ["css=.form-group:nth-child(3) > input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='gender']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "743e7c27-6e8d-48b7-a7a8-ed2af9d3e774",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "107ccb15-99d8-4e60-8fe3-f74cdd24dc98",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.alert-danger",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0cf964c5-fccc-40b7-a66c-3368ed31c54f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.alert-danger",
+      "targets": [],
+      "value": "Comment is too long!"
+    }]
+  }, {
+    "id": "f56d9f4c-acdb-495e-a005-13059a3e7664",
+    "name": "Select gender: other",
+    "commands": [{
+      "id": "d2538499-416f-4193-9c72-e2ac05798946",
+      "comment": "",
+      "command": "open",
+      "target": "https://itmokykla.lt/testing/one.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c73d113f-79e0-48a4-bc8d-61ec0a4d6e02",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1405x809",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "65f13bd3-a5e2-4de0-b45a-5b1df4cdf63e",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d5805d7e-8a9d-4cc8-a1fe-913f9accdb61",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Petras"
+    }, {
+      "id": "ff523734-8269-4862-a8da-117d25565c92",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(4)",
+      "targets": [
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=(//input[@name='gender'])[3]", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[3]/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c49a1736-0008-4858-a704-c3003d3009e3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8be8e154-b185-4277-8395-9af2d1725d6c",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "xpath=//body[contains(@style,'red')]",
+      "targets": [
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f8453c73-728f-415d-8ce9-1c8907ddd91a",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.alert-success",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "4a094b52-1ba0-417b-bb48-a140427d63e4",
+    "name": "Select gender: male",
+    "commands": [{
+      "id": "02d79332-1bea-4b88-8510-cf71fe020793",
+      "comment": "",
+      "command": "open",
+      "target": "https://itmokykla.lt/testing/one.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "71045d73-a7a3-490f-9af7-b72d723f4ddb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1405x809",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b8a1616e-e041-4b5d-af5c-81ef18fbcfd5",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "17631f5b-1031-43f7-9bf9-d9ccd1dafcf5",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Petras"
+    }, {
+      "id": "4a88fd76-472c-4504-9e3b-c8b69a968dec",
+      "comment": "",
+      "command": "click",
+      "target": "name=gender",
+      "targets": [
+        ["name=gender", "name"],
+        ["css=.form-group:nth-child(3) > input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='gender']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "595cccd0-a184-44fe-b488-93170b9e838c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c2059695-8f28-4b3a-869c-bf33378c454b",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "xpath=//body[contains(@style,'red')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6a8265ae-19dc-4ce7-b271-1b28b3760f98",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.alert-success",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "d5f5d12e-3b47-41c2-9594-9f69475090bc",
+    "name": "Select gender: female",
+    "commands": [{
+      "id": "16323b5b-0817-491a-a2e3-9a1731f289dd",
+      "comment": "",
+      "command": "open",
+      "target": "https://itmokykla.lt/testing/one.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "43139ca1-eb75-4f11-9ba5-d8222a352f72",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1405x809",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3c7f58f0-5f9c-4985-98e0-85eb2d286909",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "77aefa44-0cad-4326-9795-f6e66bd0c38a",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Sandra"
+    }, {
+      "id": "2e5f7ea7-ad09-468f-a66f-c32d06526dce",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(3)",
+      "targets": [
+        ["css=input:nth-child(3)", "css:finder"],
+        ["xpath=(//input[@name='gender'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[3]/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e44028b3-c8da-4530-ab1b-fd2d24f32c9e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f3ce8e2d-025f-4b46-b059-fc36e4abff8f",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "xpath=//body[contains(@style,'red')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3a7cb283-316c-4e9a-89d5-88cec58f5cd4",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.alert-success",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "490486a8-001a-4ec6-95a2-6ef71316a705",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://itmokykla.lt/", "https://itmokykla.lt/testing/one.html"],
+  "plugins": []
+}
