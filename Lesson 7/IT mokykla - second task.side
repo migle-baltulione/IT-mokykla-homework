@@ -5,7 +5,7 @@
   "url": "https://itmokykla.lt/testing/two.html",
   "tests": [{
     "id": "088856fb-eae6-4ee7-898c-db22f8043c86",
-    "name": "Unlimited number of comments",
+    "name": "Should allow multiple comments",
     "commands": [{
       "id": "410c2010-e8ee-40e6-852a-c1bf864a53bd",
       "comment": "",
@@ -2263,7 +2263,7 @@
     }]
   }, {
     "id": "135374ff-18c8-472c-8f3f-97c17fced222",
-    "name": "Post empty comment",
+    "name": "Should not allow to post empty comment",
     "commands": [{
       "id": "ae80bd58-5923-4eb8-b8a3-f64a06a210f5",
       "comment": "",
@@ -2318,7 +2318,7 @@
     }]
   }, {
     "id": "c65de3c0-8cef-48e6-b07d-2e65a39a5814",
-    "name": "Error when comment starts with number",
+    "name": "Should not allow comment that starts with number",
     "commands": [{
       "id": "fa1927ee-ac0f-4ff4-9d37-72a6da83fd74",
       "comment": "",
@@ -2384,7 +2384,7 @@
     }]
   }, {
     "id": "8c39230e-925c-4072-baef-94e266f102d1",
-    "name": "Post 2 identical comments",
+    "name": "Should not allow to post 2 identical comments",
     "commands": [{
       "id": "0c675545-1ea6-4aa3-8495-e22e880cae5b",
       "comment": "",
@@ -2480,7 +2480,7 @@
     }]
   }, {
     "id": "8c15a0cd-777c-4fba-94c1-b57fec0fc3f8",
-    "name": "Error when comment starts with symbol",
+    "name": "Should not allow comment that starts with symbol",
     "commands": [{
       "id": "bd75f0b6-4171-4fbb-995a-f5f638ef0aa8",
       "comment": "",
@@ -2543,7 +2543,7 @@
     }]
   }, {
     "id": "9ac680b0-2352-436d-a644-231f804aafed",
-    "name": "155 symbols length comment",
+    "name": "Should allow comment with 155 characters",
     "commands": [{
       "id": "5104b847-29b8-4c03-b660-2f05929f42c2",
       "comment": "",
@@ -2602,7 +2602,7 @@
     }]
   }, {
     "id": "8e5bb961-cfb8-4dbd-954a-d2b139dac71c",
-    "name": "156 symbols length comment",
+    "name": "Should not allow comment with 156 characters",
     "commands": [{
       "id": "93d63e34-bd05-4360-9abc-7dd1df862825",
       "comment": "",
