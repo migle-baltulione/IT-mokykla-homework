@@ -74,7 +74,7 @@
       "value": ""
     }, {
       "id": "b1c9915f-9535-4d33-b15a-775bfd96915f",
-      "comment": "",
+      "comment": "Check if failure alert is shown",
       "command": "assertElementPresent",
       "target": "css=.alert-danger",
       "targets": [
@@ -85,7 +85,7 @@
       "value": ""
     }, {
       "id": "0fb5b0b8-f443-40b1-b84c-fb6b64edc8ee",
-      "comment": "",
+      "comment": "Check if failure alert has correct message",
       "command": "assertText",
       "target": "css=.alert-danger",
       "targets": [],
@@ -162,7 +162,7 @@
       "value": ""
     }, {
       "id": "94281694-f176-4e1c-a0ef-52459c9031cd",
-      "comment": "",
+      "comment": "Check if confirmation alert is shown",
       "command": "assertElementPresent",
       "target": "css=.alert-success",
       "targets": [
@@ -244,7 +244,7 @@
       "value": ""
     }, {
       "id": "1de7bc53-988f-453f-9093-29be82092e6d",
-      "comment": "",
+      "comment": "Check if confirmation alert is shown",
       "command": "assertElementPresent",
       "target": "css=.alert-success",
       "targets": [
@@ -255,7 +255,7 @@
       "value": ""
     }, {
       "id": "c99fa8e6-02b0-459b-9b3a-ddf07b3fa298",
-      "comment": "",
+      "comment": "Check if confirmation alert has correct text",
       "command": "assertText",
       "target": "css=.alert-success",
       "targets": [
@@ -337,14 +337,14 @@
       "value": ""
     }, {
       "id": "5e5e007e-cc11-40b7-985d-7b95e0596cee",
-      "comment": "",
+      "comment": "Check if failure alert is shown",
       "command": "assertElementPresent",
       "target": "css=.alert-danger",
       "targets": [],
       "value": ""
     }, {
       "id": "c34d33c2-5b98-4ae3-b5cd-c579ab24a269",
-      "comment": "",
+      "comment": "Check if failure alert has correct message",
       "command": "assertText",
       "target": "css=.alert-danger",
       "targets": [],
@@ -450,14 +450,14 @@
       "value": ""
     }, {
       "id": "9c8e5902-c3e7-4cdd-808f-f3ef598816f0",
-      "comment": "",
+      "comment": "Check if confirmation alert is shown",
       "command": "assertElementPresent",
       "target": "css=.alert-success",
       "targets": [],
       "value": ""
     }, {
       "id": "abda431c-9b6c-4682-827e-68de0f5e6295",
-      "comment": "",
+      "comment": "Check if confirmation alert has correct text",
       "command": "assertText",
       "target": "css=.alert-success",
       "targets": [],
@@ -563,14 +563,14 @@
       "value": ""
     }, {
       "id": "107ccb15-99d8-4e60-8fe3-f74cdd24dc98",
-      "comment": "",
+      "comment": "Check if failure alert is shown",
       "command": "assertElementPresent",
       "target": "css=.alert-danger",
       "targets": [],
       "value": ""
     }, {
       "id": "0cf964c5-fccc-40b7-a66c-3368ed31c54f",
-      "comment": "",
+      "comment": "Check if failure alert has correct message",
       "command": "assertText",
       "target": "css=.alert-danger",
       "targets": [],
@@ -578,7 +578,7 @@
     }]
   }, {
     "id": "f56d9f4c-acdb-495e-a005-13059a3e7664",
-    "name": "Possible to select gender: other",
+    "name": "Should allow to select gender: other",
     "commands": [{
       "id": "d2538499-416f-4193-9c72-e2ac05798946",
       "comment": "",
@@ -647,7 +647,7 @@
       "value": ""
     }, {
       "id": "f8453c73-728f-415d-8ce9-1c8907ddd91a",
-      "comment": "",
+      "comment": "Check if confirmation alert is shown",
       "command": "assertElementPresent",
       "target": "css=.alert-success",
       "targets": [],
@@ -655,7 +655,7 @@
     }]
   }, {
     "id": "4a094b52-1ba0-417b-bb48-a140427d63e4",
-    "name": "Possible to select gender: male",
+    "name": "Should allow to select gender: male",
     "commands": [{
       "id": "02d79332-1bea-4b88-8510-cf71fe020793",
       "comment": "",
@@ -724,15 +724,8 @@
       ],
       "value": ""
     }, {
-      "id": "c2059695-8f28-4b3a-869c-bf33378c454b",
-      "comment": "",
-      "command": "assertElementNotPresent",
-      "target": "xpath=//body[contains(@style,'red')]",
-      "targets": [],
-      "value": ""
-    }, {
       "id": "6a8265ae-19dc-4ce7-b271-1b28b3760f98",
-      "comment": "",
+      "comment": "Check if confirmation alert is shown",
       "command": "assertElementPresent",
       "target": "css=.alert-success",
       "targets": [],
@@ -740,7 +733,7 @@
     }]
   }, {
     "id": "d5f5d12e-3b47-41c2-9594-9f69475090bc",
-    "name": "Possible to select gender: female",
+    "name": "Should allow to select gender: female",
     "commands": [{
       "id": "16323b5b-0817-491a-a2e3-9a1731f289dd",
       "comment": "",
@@ -808,15 +801,8 @@
       ],
       "value": ""
     }, {
-      "id": "f3ce8e2d-025f-4b46-b059-fc36e4abff8f",
-      "comment": "",
-      "command": "assertElementNotPresent",
-      "target": "xpath=//body[contains(@style,'red')]",
-      "targets": [],
-      "value": ""
-    }, {
       "id": "3a7cb283-316c-4e9a-89d5-88cec58f5cd4",
-      "comment": "",
+      "comment": "Check if confirmation alert is shown",
       "command": "assertElementPresent",
       "target": "css=.alert-success",
       "targets": [],
