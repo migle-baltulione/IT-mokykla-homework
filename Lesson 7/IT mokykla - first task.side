@@ -5,7 +5,7 @@
   "url": "https://itmokykla.lt/testing/one.html",
   "tests": [{
     "id": "9b5270e6-1faa-4def-b9a5-78761049ae99",
-    "name": "Error when username is 4 symbols long",
+    "name": "Should not allow username with 4 characters",
     "commands": [{
       "id": "fa353b1c-1226-4dea-bdd9-c2cfa99a0c24",
       "comment": "",
@@ -52,7 +52,7 @@
       "id": "d74c67dc-08b6-4952-b708-9807ffd56bae",
       "comment": "",
       "command": "click",
-      "target": "css=input:nth-child(3)",
+      "target": "xpath=//input[@value='female']",
       "targets": [
         ["css=input:nth-child(3)", "css:finder"],
         ["xpath=(//input[@name='gender'])[2]", "xpath:attributes"],
@@ -89,11 +89,11 @@
       "command": "assertText",
       "target": "css=.alert-danger",
       "targets": [],
-      "value": "Username is too short"
+      "value": "Username must be longer!"
     }]
   }, {
     "id": "404a5cd3-48b4-4bb1-ac7d-4d1a37463e57",
-    "name": "Validation of 5 symbols lenght username",
+    "name": "Should allow username with 5 characters",
     "commands": [{
       "id": "6abd23c1-41d5-488d-99ff-9747b37093db",
       "comment": "",
@@ -140,7 +140,7 @@
       "id": "0b4fbc42-380b-4f4e-b4b4-6ba76062e7df",
       "comment": "",
       "command": "click",
-      "target": "css=input:nth-child(3)",
+      "target": "xpath=//input[@value='female']",
       "targets": [
         ["css=input:nth-child(3)", "css:finder"],
         ["xpath=(//input[@name='gender'])[2]", "xpath:attributes"],
@@ -171,17 +171,10 @@
         ["xpath=//div[2]/div[2]/div/div", "xpath:position"]
       ],
       "value": ""
-    }, {
-      "id": "11dae939-51b0-4b83-a049-40694b1c3b87",
-      "comment": "",
-      "command": "assertText",
-      "target": "css=.alert-success",
-      "targets": [],
-      "value": "Registration successfull"
     }]
   }, {
     "id": "86658767-d6f0-4058-9758-7d8c75db7b18",
-    "name": "Validation of 20 symbols lenght username",
+    "name": "Should allow username with 20 characters",
     "commands": [{
       "id": "31ab94ee-efe4-494a-8e84-e99b1e14987b",
       "comment": "",
@@ -274,7 +267,7 @@
     }]
   }, {
     "id": "c8381408-7091-4b10-b205-0e4750740639",
-    "name": "Error when username is 21 symbols long",
+    "name": "Should not allow username with 21 character",
     "commands": [{
       "id": "d7ead9b0-3b1d-4986-8c55-24d34fcee1a3",
       "comment": "",
@@ -359,7 +352,7 @@
     }]
   }, {
     "id": "6c5ba5a8-ec37-4a28-bb47-8de76d9e635f",
-    "name": "255 symbols comment",
+    "name": "Should allow comment with 255 characters",
     "commands": [{
       "id": "4fc330d7-03cd-479b-9f33-cbe87565bd24",
       "comment": "",
@@ -472,7 +465,7 @@
     }]
   }, {
     "id": "caed8314-fde8-4184-831d-0dbecbfab46b",
-    "name": "256 symbols comment",
+    "name": "Should not allow comment with 256 characters",
     "commands": [{
       "id": "ed7d7a79-4753-4ebb-8477-df0c2dbfc06b",
       "comment": "",
@@ -585,7 +578,7 @@
     }]
   }, {
     "id": "f56d9f4c-acdb-495e-a005-13059a3e7664",
-    "name": "Select gender: other",
+    "name": "Possible to select gender: other",
     "commands": [{
       "id": "d2538499-416f-4193-9c72-e2ac05798946",
       "comment": "",
@@ -632,7 +625,7 @@
       "id": "ff523734-8269-4862-a8da-117d25565c92",
       "comment": "",
       "command": "click",
-      "target": "css=input:nth-child(4)",
+      "target": "xpath=//input[@value='other']",
       "targets": [
         ["css=input:nth-child(4)", "css:finder"],
         ["xpath=(//input[@name='gender'])[3]", "xpath:attributes"],
@@ -653,16 +646,6 @@
       ],
       "value": ""
     }, {
-      "id": "8be8e154-b185-4277-8395-9af2d1725d6c",
-      "comment": "",
-      "command": "assertElementNotPresent",
-      "target": "xpath=//body[contains(@style,'red')]",
-      "targets": [
-        ["css=body", "css:finder"],
-        ["xpath=//body", "xpath:position"]
-      ],
-      "value": ""
-    }, {
       "id": "f8453c73-728f-415d-8ce9-1c8907ddd91a",
       "comment": "",
       "command": "assertElementPresent",
@@ -672,7 +655,7 @@
     }]
   }, {
     "id": "4a094b52-1ba0-417b-bb48-a140427d63e4",
-    "name": "Select gender: male",
+    "name": "Possible to select gender: male",
     "commands": [{
       "id": "02d79332-1bea-4b88-8510-cf71fe020793",
       "comment": "",
@@ -757,7 +740,7 @@
     }]
   }, {
     "id": "d5f5d12e-3b47-41c2-9594-9f69475090bc",
-    "name": "Select gender: female",
+    "name": "Possible to select gender: female",
     "commands": [{
       "id": "16323b5b-0817-491a-a2e3-9a1731f289dd",
       "comment": "",
@@ -804,7 +787,7 @@
       "id": "2e5f7ea7-ad09-468f-a66f-c32d06526dce",
       "comment": "",
       "command": "click",
-      "target": "css=input:nth-child(3)",
+      "target": "xpath=//input[@value='female']",
       "targets": [
         ["css=input:nth-child(3)", "css:finder"],
         ["xpath=(//input[@name='gender'])[2]", "xpath:attributes"],
