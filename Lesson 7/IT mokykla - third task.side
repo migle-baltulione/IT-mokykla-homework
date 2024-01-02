@@ -5,7 +5,7 @@
   "url": "https://itmokykla.lt/testing/three.html",
   "tests": [{
     "id": "0de8ce6a-3183-449e-943b-dd45a80b5b15",
-    "name": "Add new restaurant",
+    "name": "Should allow to add new restaurant",
     "commands": [{
       "id": "7f4e0585-f24e-476f-a3db-a45b91d68b44",
       "comment": "",
@@ -116,7 +116,7 @@
       "value": ""
     }, {
       "id": "17948af8-80a8-43ad-a718-ddcc8eac9ca0",
-      "comment": "",
+      "comment": "Check if confirmation message appears",
       "command": "assertElementPresent",
       "target": "css=.alert",
       "targets": [
@@ -127,21 +127,21 @@
       "value": "Successfully added a new restaurant!"
     }, {
       "id": "d0187a51-c255-4eab-9a07-9f0e0a547afc",
-      "comment": "",
+      "comment": "Check if restaurant name is added",
       "command": "assertElementPresent",
       "target": "xpath=//li[contains(.,'Talutti')]",
       "targets": [],
       "value": ""
     }, {
       "id": "ec7b1173-3c53-4f36-9d46-0f7498e6ea61",
-      "comment": "",
+      "comment": "Check if restaurant address is added",
       "command": "assertElementPresent",
       "target": "xpath=//li//span[contains(text(),'Islandijos pl. 32')]",
       "targets": [],
       "value": ""
     }, {
       "id": "065f4243-4851-4faa-b85c-3f563599841b",
-      "comment": "",
+      "comment": "Check if restaurant rating is added",
       "command": "assertElementPresent",
       "target": "xpath=//li//span[text()=', Rating: * * * * ']",
       "targets": [],
@@ -149,7 +149,7 @@
     }]
   }, {
     "id": "df95191b-c492-45cd-80a1-8790367c4593",
-    "name": "Add 2 identical restaurants",
+    "name": "Should not allow to add 2 identical restaurants",
     "commands": [{
       "id": "cd8bf6d4-bd96-4802-bbb9-ac3ada62bce3",
       "comment": "",
@@ -259,35 +259,10 @@
       ],
       "value": ""
     }, {
-      "id": "99f760e7-90ec-43d6-bdc9-0b26d6d5031c",
-      "comment": "",
-      "command": "assertElementPresent",
-      "target": "css=.alert",
-      "targets": [
-        ["css=.alert", "css:finder"],
-        ["xpath=//div[@id='result']/div", "xpath:idRelative"],
-        ["xpath=//div/div[3]/div", "xpath:position"]
-      ],
-      "value": "Successfully added a new restaurant!"
-    }, {
       "id": "079efa87-a9c9-44cb-a21e-e0e98dcf7681",
-      "comment": "",
+      "comment": "Check if restaurant is added",
       "command": "assertElementPresent",
       "target": "xpath=//li[contains(.,'No. 10, Talutti')]",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "ec8b86b1-675d-4f6f-a436-b721df16eb43",
-      "comment": "",
-      "command": "assertElementPresent",
-      "target": "xpath=//li//span[contains(text(),'Islandijos pl. 32')]",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "01213d9f-950b-4c54-a528-ce6076662edc",
-      "comment": "",
-      "command": "assertElementPresent",
-      "target": "xpath=//li//span[text()=', Rating: * * * * ']",
       "targets": [],
       "value": ""
     }, {
@@ -366,22 +341,15 @@
       "value": ""
     }, {
       "id": "b3c9cdd9-6da1-4d13-8a41-5799dcb2b057",
-      "comment": "",
+      "comment": "Check if error \"Item already exists\" appears",
       "command": "assertAlert",
       "target": "Item already exists",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "26340ab8-64ec-4714-90b5-5d691ab9fa89",
-      "comment": "",
-      "command": "assertElementNotPresent",
-      "target": "xpath=//li[contains(.,'No. 11, Talutti')]",
       "targets": [],
       "value": ""
     }]
   }, {
     "id": "2493a4da-b2d1-4f4c-b086-535721b83dc8",
-    "name": "Add 11 restaurants",
+    "name": "Should not allow to add 11 restaurants",
     "commands": [{
       "id": "b5d69e3a-3d73-4c24-9116-8d8d630f0f71",
       "comment": "",
@@ -491,35 +459,10 @@
       ],
       "value": ""
     }, {
-      "id": "14c4e799-63a4-45cc-991b-39db94f6c33d",
-      "comment": "",
-      "command": "assertElementPresent",
-      "target": "css=.alert",
-      "targets": [
-        ["css=.alert", "css:finder"],
-        ["xpath=//div[@id='result']/div", "xpath:idRelative"],
-        ["xpath=//div/div[3]/div", "xpath:position"]
-      ],
-      "value": "Successfully added a new restaurant!"
-    }, {
       "id": "631b954e-2d87-42b7-9e4d-41d772b5bfba",
-      "comment": "",
+      "comment": "Check if 10th restaurant is added",
       "command": "assertElementPresent",
       "target": "xpath=//li[contains(.,'No. 10, Talutti')]",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "7d0fdbfa-cc0d-4df9-b858-0c4332fc7d0f",
-      "comment": "",
-      "command": "assertElementPresent",
-      "target": "xpath=//li//span[contains(text(),'Islandijos pl. 32')]",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "e63bed3b-e5d8-4a33-a6cf-0b023ec885b6",
-      "comment": "",
-      "command": "assertElementPresent",
-      "target": "xpath=//li//span[text()=', Rating: * * * * ']",
       "targets": [],
       "value": ""
     }, {
@@ -597,30 +540,16 @@
       ],
       "value": ""
     }, {
-      "id": "4d573042-6d41-4a3c-8241-ef12981b5dd5",
-      "comment": "",
-      "command": "assertElementPresent",
-      "target": "css=.alert-success",
-      "targets": [],
-      "value": ""
-    }, {
       "id": "0f281c3b-237a-4ccf-bf05-551fd12792d6",
-      "comment": "",
+      "comment": "Check if 11th restaurant is not added",
       "command": "assertElementNotPresent",
       "target": "xpath=//li[contains(.,'No. 11, London Grill')]",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "a3b06037-53e5-47b2-9595-eac6d7294b72",
-      "comment": "",
-      "command": "assertElementPresent",
-      "target": "xpath=//li[contains(.,'No. 10, London Grill')]",
       "targets": [],
       "value": ""
     }]
   }, {
     "id": "75c10cfe-4514-4eae-b7de-9b5682f9a4b7",
-    "name": "Set rating - 0",
+    "name": "Should not allow to set 0 as rating",
     "commands": [{
       "id": "481f0f8c-187c-4256-8e5d-bd088b5a26be",
       "comment": "",
@@ -731,22 +660,15 @@
       "value": ""
     }, {
       "id": "5c265f66-eef0-4bd0-8238-e8b3151f0c47",
-      "comment": "",
+      "comment": "Check if error appears",
       "command": "assertAlert",
       "target": "Invalid rating for the restaurant",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "a3c9c99c-805c-4e72-9c62-f9a85b21812b",
-      "comment": "",
-      "command": "assertElementNotPresent",
-      "target": "xpath=//li//span[text()=', Rating: ']",
       "targets": [],
       "value": ""
     }]
   }, {
     "id": "b9049ab0-83b2-4dfb-8538-0278fd4bb85a",
-    "name": "Set rating - 1",
+    "name": "Should allow to set 1 as rating",
     "commands": [{
       "id": "b4f1681e-cc80-4cc6-b9c8-42dbdaf9b3c7",
       "comment": "",
@@ -856,19 +778,8 @@
       ],
       "value": ""
     }, {
-      "id": "fc7a5168-3352-48eb-bee3-475f42356145",
-      "comment": "",
-      "command": "assertElementPresent",
-      "target": "css=.alert-success",
-      "targets": [
-        ["css=.alert", "css:finder"],
-        ["xpath=//div[@id='result']/div", "xpath:idRelative"],
-        ["xpath=//div/div[3]/div", "xpath:position"]
-      ],
-      "value": "Successfully added a new restaurant!"
-    }, {
       "id": "510a9857-7f75-4df4-a845-07fcffaa30f3",
-      "comment": "",
+      "comment": "Check if restaurant is added",
       "command": "assertElementPresent",
       "target": "xpath=//li//span[text()=', Rating: * ']",
       "targets": [],
@@ -876,7 +787,7 @@
     }]
   }, {
     "id": "4c4ee321-d499-4de4-842e-0cbe2c51140d",
-    "name": "Set rating - 5",
+    "name": "Should allow to set 5 as rating",
     "commands": [{
       "id": "57242b51-784d-4470-9a84-ada0d04900d4",
       "comment": "",
@@ -986,19 +897,8 @@
       ],
       "value": ""
     }, {
-      "id": "c89c0c8d-3c03-4294-a00a-7ef901064488",
-      "comment": "",
-      "command": "assertElementPresent",
-      "target": "css=.alert-success",
-      "targets": [
-        ["css=.alert", "css:finder"],
-        ["xpath=//div[@id='result']/div", "xpath:idRelative"],
-        ["xpath=//div/div[3]/div", "xpath:position"]
-      ],
-      "value": "Successfully added a new restaurant!"
-    }, {
       "id": "02f506b9-ad60-4417-a7ce-b1c224bcec8e",
-      "comment": "",
+      "comment": "Check if restaurant is added",
       "command": "assertElementPresent",
       "target": "xpath=//li//span[text()=', Rating: * * * * * ']",
       "targets": [],
@@ -1006,7 +906,7 @@
     }]
   }, {
     "id": "9cdf2291-2155-406b-9a65-80a9ed399f9b",
-    "name": "Set rating - 6",
+    "name": "Should not allow to set 6 as rating",
     "commands": [{
       "id": "49a2f99c-da1e-4b25-bc6a-8a84d2b95f0a",
       "comment": "",
@@ -1116,15 +1016,8 @@
       ],
       "value": ""
     }, {
-      "id": "180bafea-9e10-4a55-9b96-20152014e062",
-      "comment": "",
-      "command": "assertElementNotPresent",
-      "target": "xpath=//li//span[text()=', Rating: * * * * * * ']",
-      "targets": [],
-      "value": ""
-    }, {
       "id": "39887a98-0b40-40a7-843f-f456e4d99257",
-      "comment": "",
+      "comment": "Check if error appears",
       "command": "assertAlert",
       "target": "Invalid rating for the restaurant",
       "targets": [],
@@ -1132,7 +1025,7 @@
     }]
   }, {
     "id": "f5eb4d0d-e03d-4d93-9be4-af14dada33ba",
-    "name": "Set rating - letters",
+    "name": "Should not allow to set letter as rating",
     "commands": [{
       "id": "88abb91e-ce8c-40b0-b7ec-01fa80bf6ffb",
       "comment": "",
@@ -1242,15 +1135,8 @@
       ],
       "value": ""
     }, {
-      "id": "d30a1896-69a0-42c0-ac64-907c79e91cb6",
-      "comment": "",
-      "command": "assertElementNotPresent",
-      "target": "xpath=//li[contains(.,'Talutti')]",
-      "targets": [],
-      "value": ""
-    }, {
       "id": "ad7df92e-8b85-43e0-8420-daac59bd4964",
-      "comment": "",
+      "comment": "Check if error appears",
       "command": "assertAlert",
       "target": "Invalid rating for the restaurant",
       "targets": [],
@@ -1258,7 +1144,7 @@
     }]
   }, {
     "id": "3cd1ea07-2d2d-4163-b5bd-e64faa287f27",
-    "name": "Set rating - symbols",
+    "name": "Should not allow set symbols as rating",
     "commands": [{
       "id": "240c7239-08ef-46aa-acca-1690916342e2",
       "comment": "",
@@ -1368,15 +1254,8 @@
       ],
       "value": ""
     }, {
-      "id": "4145b095-bfc7-4370-89bd-8f8d34eb9c9d",
-      "comment": "",
-      "command": "assertElementNotPresent",
-      "target": "xpath=//li[contains(.,'Talutti')]",
-      "targets": [],
-      "value": ""
-    }, {
       "id": "e6def669-50fd-4aa8-be5a-5ad1d36a66b9",
-      "comment": "",
+      "comment": "Check if error \"Invalid rating for the restaurant\" appears",
       "command": "assertAlert",
       "target": "Invalid rating for the restaurant",
       "targets": [],
@@ -1384,7 +1263,7 @@
     }]
   }, {
     "id": "3582a0c9-fe3a-4710-b44a-7bc37c5001e2",
-    "name": "Set rating - empty",
+    "name": "Should not allow to set empty rating",
     "commands": [{
       "id": "b7972480-3b28-4bec-9451-68bd638d7250",
       "comment": "",
@@ -1494,15 +1373,8 @@
       ],
       "value": ""
     }, {
-      "id": "4c26557b-9868-418e-b4ec-60cff4aa31ac",
-      "comment": "",
-      "command": "assertElementNotPresent",
-      "target": "xpath=//li[contains(.,'Talutti')]",
-      "targets": [],
-      "value": ""
-    }, {
       "id": "0c7985b9-79e6-4a3d-8a3b-d31f2cc9a1a8",
-      "comment": "",
+      "comment": "Check if error appears",
       "command": "assertAlert",
       "target": "Invalid rating for the restaurant",
       "targets": [],
