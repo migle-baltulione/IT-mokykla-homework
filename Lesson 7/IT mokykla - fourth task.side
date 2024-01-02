@@ -1,0 +1,109 @@
+{
+  "id": "40cf0a30-4ce1-4dc2-9a6e-a6092c6db357",
+  "version": "2.0",
+  "name": "IT mokykla - fourth task",
+  "url": "https://itmokykla.lt",
+  "tests": [{
+    "id": "cc023d95-489a-4b48-aa50-9c254c1586b0",
+    "name": "Change display of the table by clicking table filter",
+    "commands": [{
+      "id": "a4e2a3e1-c2bc-49bd-a1d5-9d29861ec447",
+      "comment": "",
+      "command": "open",
+      "target": "/testing/four.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6d1f5287-e282-4ea4-ad44-314a197f2ed4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1396x810",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "86d0d09a-0a54-487b-b2a4-c6cf438a85b5",
+      "comment": "",
+      "command": "click",
+      "target": "id=listing-filter-panel-vaizdavimas-sarasas",
+      "targets": [
+        ["id=listing-filter-panel-vaizdavimas-sarasas", "id"],
+        ["css=#listing-filter-panel-vaizdavimas-sarasas", "css:finder"],
+        ["xpath=//div[@id='listing-filter-panel-vaizdavimas-sarasas']", "xpath:attributes"],
+        ["xpath=//div[@id='listing-filter-panel']/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0de82845-2c24-48b6-b4a7-aef43fbfffea",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//*[@id='listing-filter-panel-vaizdavimas-sarasas'][contains(@class,'checked')]",
+      "targets": [
+        ["id=listing-filter-panel-vaizdavimas-sarasas", "id"],
+        ["css=#listing-filter-panel-vaizdavimas-sarasas", "css:finder"],
+        ["xpath=//div[@id='listing-filter-panel-vaizdavimas-sarasas']", "xpath:attributes"],
+        ["xpath=//div[@id='listing-filter-panel']/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c812ff47-0bb1-41e3-8938-320d82531494",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "xpath=//*[@id='listing-filter-panel-vaizdavimas-sarasasfoto'][contains(@class,'checked')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "661f54a7-a07c-4276-84a5-0ac439a1d0cf",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.productListingSmall",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8874c9df-b4e7-441a-8a26-7d3b8887e9fd",
+      "comment": "",
+      "command": "click",
+      "target": "id=listing-filter-panel-vaizdavimas-sarasasfoto",
+      "targets": [
+        ["id=listing-filter-panel-vaizdavimas-sarasasfoto", "id"],
+        ["css=#listing-filter-panel-vaizdavimas-sarasasfoto", "css:finder"],
+        ["xpath=//div[@id='listing-filter-panel-vaizdavimas-sarasasfoto']", "xpath:attributes"],
+        ["xpath=//div[@id='listing-filter-panel']/div[2]", "xpath:idRelative"],
+        ["xpath=//div/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "74f24d44-4f7c-4efe-b579-d3638d722ca1",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "xpath=//*[@id='listing-filter-panel-vaizdavimas-sarasas'][contains(@class,'checked')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "326b9efd-90b0-4393-9cf8-478baf88e960",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//*[@id='listing-filter-panel-vaizdavimas-sarasasfoto'][contains(@class,'checked')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e50ba0fe-efaa-4b0d-928c-4c7de63dd8b1",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.category-list-table",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "8e7432ee-c519-447e-9adf-bc8fb4b36007",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["cc023d95-489a-4b48-aa50-9c254c1586b0"]
+  }],
+  "urls": ["https://itmokykla.lt/"],
+  "plugins": []
+}
