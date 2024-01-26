@@ -1,0 +1,267 @@
+{
+  "id": "40cf0a30-4ce1-4dc2-9a6e-a6092c6db357",
+  "version": "2.0",
+  "name": "IT mokykla - fourth task",
+  "url": "https://itmokykla.lt",
+  "tests": [{
+    "id": "cc023d95-489a-4b48-aa50-9c254c1586b0",
+    "name": "Should allow to change display of the table by clicking table filter",
+    "commands": [{
+      "id": "a4e2a3e1-c2bc-49bd-a1d5-9d29861ec447",
+      "comment": "",
+      "command": "open",
+      "target": "/testing/four.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6d1f5287-e282-4ea4-ad44-314a197f2ed4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1396x810",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "86d0d09a-0a54-487b-b2a4-c6cf438a85b5",
+      "comment": "",
+      "command": "click",
+      "target": "id=listing-filter-panel-vaizdavimas-sarasas",
+      "targets": [
+        ["id=listing-filter-panel-vaizdavimas-sarasas", "id"],
+        ["css=#listing-filter-panel-vaizdavimas-sarasas", "css:finder"],
+        ["xpath=//div[@id='listing-filter-panel-vaizdavimas-sarasas']", "xpath:attributes"],
+        ["xpath=//div[@id='listing-filter-panel']/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "661f54a7-a07c-4276-84a5-0ac439a1d0cf",
+      "comment": "Items in the table are without images",
+      "command": "assertElementPresent",
+      "target": "css=.productListingSmall",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8874c9df-b4e7-441a-8a26-7d3b8887e9fd",
+      "comment": "",
+      "command": "click",
+      "target": "id=listing-filter-panel-vaizdavimas-sarasasfoto",
+      "targets": [
+        ["id=listing-filter-panel-vaizdavimas-sarasasfoto", "id"],
+        ["css=#listing-filter-panel-vaizdavimas-sarasasfoto", "css:finder"],
+        ["xpath=//div[@id='listing-filter-panel-vaizdavimas-sarasasfoto']", "xpath:attributes"],
+        ["xpath=//div[@id='listing-filter-panel']/div[2]", "xpath:idRelative"],
+        ["xpath=//div/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e50ba0fe-efaa-4b0d-928c-4c7de63dd8b1",
+      "comment": "Items in the table are with images",
+      "command": "assertElementPresent",
+      "target": "css=.category-list-table",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "f3df8e8e-290b-47e7-8bcd-4bd917da1236",
+    "name": "Should have shopping basket",
+    "commands": [{
+      "id": "29fffcc0-372c-49c9-ac2f-a6ee7ee89048",
+      "comment": "",
+      "command": "open",
+      "target": "/testing/four.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2abe0acb-0327-4523-9dee-cde19f0e08bf",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1396x810",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d58d24fb-7c99-42e5-87eb-bae5a6027781",
+      "comment": "Shopping basket is on the page",
+      "command": "assertElementPresent",
+      "target": "css=#krepselis",
+      "targets": [
+        ["css=#krepselis > div", "css:finder"],
+        ["xpath=//div[@id='krepselis']/div", "xpath:idRelative"],
+        ["xpath=//div/div/div[3]/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "a82f2403-3082-4636-a92c-56c07cf459d4",
+    "name": "Should have list of shopping items",
+    "commands": [{
+      "id": "ca3fb565-112e-44a1-a148-1aaefa18e11b",
+      "comment": "",
+      "command": "open",
+      "target": "/testing/four.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c1573c26-8a52-4ea5-a4ca-ec22800fad93",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1396x810",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0e768c80-feb3-47eb-b317-95742d8ac324",
+      "comment": "List of shopping items is one the page",
+      "command": "assertElementPresent",
+      "target": "xpath=//tbody[count(tr[@class='productListing']) > 0]",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "0897550a-313d-43d4-a507-f1d5ce087674",
+    "name": "Should allow to add item to shopping basket",
+    "commands": [{
+      "id": "465c194f-03bb-4e39-9e6a-37928ee6e318",
+      "comment": "",
+      "command": "open",
+      "target": "/testing/four.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d3279e3c-1156-4e9c-aadf-d376bcfa01ea",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1396x810",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "69fe0a45-5b26-47b8-894c-bae07e9eee89",
+      "comment": "",
+      "command": "click",
+      "target": "id=plus-0",
+      "targets": [
+        ["id=plus-0", "id"],
+        ["css=#plus-0", "css:finder"],
+        ["xpath=//img[@id='plus-0']", "xpath:attributes"],
+        ["xpath=//div[@id='centerpanel']/div/table/tbody/tr[2]/td[6]/form/div/div/img", "xpath:idRelative"],
+        ["xpath=//form/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d708d981-dea6-4bf6-92f5-3baf2b0ac4fb",
+      "comment": "Item is added to the shopping basket",
+      "command": "assertElementPresent",
+      "target": "xpath=//span[contains(@class,'basketinfo')][contains(text(),'Krepšelyje yra 1 prekė')]",
+      "targets": [
+        ["css=.text", "css:finder"],
+        ["xpath=//div[@id='krepselis']/div/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Krepšelyje yra 1 prekės už 150.59€')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "d557188e-29ab-455f-a7cf-b6f1e95f8ce3",
+    "name": "Should allow to remove item from shopping basket",
+    "commands": [{
+      "id": "d735be8a-da44-4191-90f6-b601c6b28464",
+      "comment": "",
+      "command": "open",
+      "target": "/testing/four.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1e30cb48-1916-4734-8acd-a244130bbe2d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1396x810",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "58bb5ab3-74e1-4c7b-a85c-553dd66e0ace",
+      "comment": "",
+      "command": "click",
+      "target": "id=plus-0",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8717e2d6-016f-45c3-97c2-f3c09ad1b9cb",
+      "comment": "",
+      "command": "click",
+      "target": "id=minus-0",
+      "targets": [
+        ["id=minus-0", "id"],
+        ["css=#minus-0", "css:finder"],
+        ["xpath=//img[@id='minus-0']", "xpath:attributes"],
+        ["xpath=//div[@id='centerpanel']/div/table/tbody/tr[2]/td[7]/form/div/div/img", "xpath:idRelative"],
+        ["xpath=//td[7]/form/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6996b577-c8ce-4047-a019-1ce1c9e4e65f",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@class='ui-dialog-buttonset']//button/span[text()='Delete']",
+      "targets": [
+        ["css=.ui-state-hover > .ui-button-text", "css:finder"],
+        ["xpath=//div[11]/div/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Delete')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5ff5a8fd-c50d-49c6-9e9f-48c48554181b",
+      "comment": "Item is removed from shopping basket",
+      "command": "assertElementPresent",
+      "target": "xpath=//span[contains(@class,'basketinfo')][contains(text(),'Krepšelis yra tuščias')]",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "0b49edb7-2db3-4280-9a04-94f2740ccba0",
+    "name": "Should show deletion confirmation popup",
+    "commands": [{
+      "id": "db995adb-de30-4f92-9e71-9a0379a8f87d",
+      "comment": "",
+      "command": "open",
+      "target": "/testing/four.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cd2e1586-a491-4615-ad4a-ccad415b9f3b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1396x810",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "93f52e2e-da9f-4d14-929f-27aa6b616f22",
+      "comment": "",
+      "command": "click",
+      "target": "id=plus-0",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d5d5e83d-bec9-4d14-bace-d91088916bcd",
+      "comment": "",
+      "command": "click",
+      "target": "id=minus-0",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "435a6b88-60f8-4633-9501-024b68b1c8ec",
+      "comment": "Deletion confirmation popup appears",
+      "command": "assertElementPresent",
+      "target": "css=#dialog-confirm",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "8e7432ee-c519-447e-9adf-bc8fb4b36007",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["cc023d95-489a-4b48-aa50-9c254c1586b0"]
+  }],
+  "urls": ["https://itmokykla.lt/"],
+  "plugins": []
+}
