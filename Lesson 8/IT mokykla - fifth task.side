@@ -523,7 +523,7 @@
     }]
   }, {
     "id": "f905537b-cb68-4c83-acbf-9daeebbb6958",
-    "name": "Should not allow to select 7 as adult value",
+    "name": "Should not allow to select 7 as children value",
     "commands": [{
       "id": "e7d3e874-ad71-4f0e-8a82-9f603732c09f",
       "comment": "",
@@ -1557,21 +1557,143 @@
       "targets": [],
       "value": "This field is required."
     }]
+  }, {
+    "id": "d72b6539-b590-4eb7-96ae-51495a438406",
+    "name": "Should allow to select destination country",
+    "commands": [{
+      "id": "54134d9a-c987-4907-a14b-1c99602e1154",
+      "comment": "",
+      "command": "open",
+      "target": "/testing/five.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "63a1403f-b675-41c2-90f4-5776ce008d4a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1215x653",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fbe3d4b1-b988-4552-8077-bbe236a3c11d",
+      "comment": "",
+      "command": "click",
+      "target": "id=destination",
+      "targets": [
+        ["id=destination", "id"],
+        ["css=#destination", "css:finder"],
+        ["xpath=//select[@id='destination']", "xpath:attributes"],
+        ["xpath=//form[@id='booking']/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d2d68351-a6f4-45a6-8f0b-802662781f01",
+      "comment": "",
+      "command": "select",
+      "target": "id=destination",
+      "targets": [
+        ["id=destination", "id"],
+        ["css=#destination", "css:finder"],
+        ["xpath=//select[@id='destination']", "xpath:attributes"],
+        ["xpath=//form[@id='booking']/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": "Belgium"
+    }]
+  }, {
+    "id": "9a2df48c-fe65-443c-99fe-0dfd94475a1d",
+    "name": "Should not allow to select arrival date in the past",
+    "commands": [{
+      "id": "92019e07-c656-4172-a8b4-3b6b26b63bbd",
+      "comment": "",
+      "command": "open",
+      "target": "/testing/five.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a2f4d189-47ec-4339-849d-a12730bcd239",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1808x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "03115e5d-1241-473b-992f-a95dadec810f",
+      "comment": "",
+      "command": "click",
+      "target": "id=datepicker1",
+      "targets": [
+        ["id=datepicker1", "id"],
+        ["name=datepicker1", "name"],
+        ["css=#datepicker1", "css:finder"],
+        ["xpath=//input[@id='datepicker1']", "xpath:attributes"],
+        ["xpath=//form[@id='booking']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "50e88ba4-29fd-4cc0-b5da-b2f6e7900ac0",
+      "comment": "Yesterday date is not available",
+      "command": "assertElementPresent",
+      "target": "xpath=//td[contains(@class,'datepicker-today')]/preceding::td[1][not(contains(@data-event,'click'))]",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "d40974e6-dc7a-4eb5-b58e-e1dd93bd0774",
+    "name": "Should not allow to select departure date in the past",
+    "commands": [{
+      "id": "db2dd2bb-f16e-466c-bcb6-7e5187415cdd",
+      "comment": "",
+      "command": "open",
+      "target": "/testing/five.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "23b83c86-3b32-4446-b171-1aae8119ba29",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1808x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "197343fc-3900-407a-94e8-569739a19a7b",
+      "comment": "",
+      "command": "click",
+      "target": "id=datepicker2",
+      "targets": [
+        ["id=datepicker1", "id"],
+        ["name=datepicker1", "name"],
+        ["css=#datepicker1", "css:finder"],
+        ["xpath=//input[@id='datepicker1']", "xpath:attributes"],
+        ["xpath=//form[@id='booking']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dce43e2b-ea5b-4e9b-877e-073ede24848a",
+      "comment": "Yesterday date is not available",
+      "command": "assertElementPresent",
+      "target": "xpath=//td[contains(@class,'datepicker-today')]/preceding::td[1][not(contains(@data-event,'click'))]",
+      "targets": [],
+      "value": ""
+    }]
   }],
   "suites": [{
     "id": "17dcb30e-899c-4db4-a11e-31921b32c054",
-    "name": "Mandatory fields",
+    "name": "Adults field",
     "persistSession": false,
     "parallel": false,
     "timeout": 300,
-    "tests": ["588ded19-9dcb-4a75-96ea-38a18b759f2b", "a298f7ce-df22-4e1c-b6f6-7df03272b314", "5de8f9ae-016f-4fec-950a-e098b217fd39", "0ae16b19-2012-4e9c-868a-7603aa1e55e6", "b0cee8ce-b084-42a5-bd46-98baa7ebf336"]
+    "tests": ["588ded19-9dcb-4a75-96ea-38a18b759f2b", "5566d9db-abb7-408d-a4b8-a5915f7f3722", "3745480b-c24c-4a6a-8015-f50a77715334"]
   }, {
     "id": "4242fab0-249d-43f7-8706-edeebf71fc30",
-    "name": "Adults and children values",
+    "name": "Children field",
     "persistSession": false,
     "parallel": false,
     "timeout": 300,
-    "tests": ["3745480b-c24c-4a6a-8015-f50a77715334", "f905537b-cb68-4c83-acbf-9daeebbb6958", "f3ea49ff-268e-4e4c-bb6e-78e8868b5e90", "5566d9db-abb7-408d-a4b8-a5915f7f3722"]
+    "tests": ["f905537b-cb68-4c83-acbf-9daeebbb6958", "5de8f9ae-016f-4fec-950a-e098b217fd39", "f3ea49ff-268e-4e4c-bb6e-78e8868b5e90"]
   }],
   "urls": ["https://itmokykla.lt/"],
   "plugins": []
